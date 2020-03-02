@@ -12,3 +12,7 @@ quick_backup () {
 quick_restore () {
    cp ~/tmp_backups/$1.bk ./$1
 }
+
+deploy_script () {
+   cp $1 ~/tmp_backups/$1.bk;ln -s $1 /usr/bin/
+}
